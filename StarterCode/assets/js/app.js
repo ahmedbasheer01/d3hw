@@ -80,7 +80,7 @@ d3.csv("./assets/data/data.csv").then(function(healthdata) {
   .attr("opacity", ".5");
 
   // add text to circle locations
-  var text = chartGroup.selectAll("null")
+  var text = chartGroup.selectAll("#text-label")
   .data(healthdata)
   .enter()
   .append("text")
